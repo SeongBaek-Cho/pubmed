@@ -64,8 +64,7 @@ def setDatabase(cursor, sql) :
     except Exception as ex :
         print('Excpetion [setDatabase] as %s' % ex )
 
-base = "D:/사업개발실(2020) - 복사본/7월/ABSCH/조성백/Pubmed/xml/"
-logbase =  "D:/사업개발실(2020) - 복사본/7월/ABSCH/조성백/Pubmed/log/"
+
 files = listdir(base)
 
 
@@ -75,15 +74,7 @@ files = listdir(base)
 def parser(i) :
 
     # MySQL access data
-    refdb = pymysql.connect (
-        user='refdb',
-        port=3306,
-        passwd='ckarhansgjs',
-        host='192.168.8.217',
-        db='REFDB',
-        charset='utf8'
-    )
-
+    
 
     prettyfile = files[i].split('.')[0]
     filebase = base+files[i]
