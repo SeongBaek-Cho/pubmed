@@ -10,29 +10,7 @@ proj_UTMK = Proj(init='epsg:5178') # UTM-K(Bassel) 도로명주소 지도 사용
 # WGS1984 (4326 or 4166) Locale
 proj_WGS84 = Proj(init='epsg:4166') # Wgs84 경도/위도, GPS사용 전지구 좌표
 
-# base folder
-base_url = "Z:\\인포보스 부서별자료_사업개발실\\7.경상남도람사르환경재단_식물관리\\경상남도 SHP\\LARD_ADM_SECT_SGG_경남\\"
-# parsing folder
-folder_arr = [
-    '강릉시',
-    '고성군',
-    '동해시',
-    '삼척시',
-    '속초시',
-    '양구군',
-    '양양군',
-    '영월군',
-    '원주시',
-    '인제군',
-    '정선군',
-    '철원군',
-    '춘천시',
-    '태백시',
-    '평창군',
-    '홍천군',
-    '화천군',
-    '횡성군'
-]
+
 # parsing file
 file_name = 'shape.txt'
 # DB Insert DML 파일 Buffer
